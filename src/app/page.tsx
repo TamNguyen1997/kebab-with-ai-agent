@@ -1,3 +1,5 @@
+import VoiceWidget from "./components/VoiceWidget";
+
 interface MenuItem {
   name: string;
   price: string;
@@ -123,7 +125,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
+      <VoiceWidget />
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
