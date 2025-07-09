@@ -108,7 +108,7 @@ const VoiceChat = () => {
               <Button
                 variant="destructive"
                 onClick={handleEndConversation}
-                className="w-full"
+                className="w-full text-red-400"
               >
                 <MicOff className="mr-2 h-4 w-4" />
                 End Conversation
