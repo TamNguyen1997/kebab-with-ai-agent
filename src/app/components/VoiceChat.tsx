@@ -53,6 +53,10 @@ const VoiceChat = () => {
       // Replace with your actual agent ID or URL
       const conversationId = await conversation.startSession({
         agentId: process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID!,
+        dynamicVariables: {
+          agent_name: process.env.NEXT_PUBLIC_AGENT_NAME || "Alexis",
+          business_name: process.env.NEXT_PUBLIC_BUSINESS_NAME || "Delicious Kebab",
+        }
       });
       console.log("Started conversation:", conversationId);
     } catch (error) {

@@ -1,8 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+Create a `.env` file based on the provided `.env.example`:
 
-First, run the development server:
+```bash
+cp .env.example .env
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or 
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
